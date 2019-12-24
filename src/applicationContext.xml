@@ -7,6 +7,11 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
     
+    
+    <!-- load the properties file -->
+    <context:property-placeholder location="classpath:sport.properties"/>
+    
+    
     <!-- Define your beans here -->
     
     <!-- Define the dependency -->
@@ -26,6 +31,10 @@
     	
     	<!-- Setup setter injection -->
     	<property name="fortuneService" ref="myFortuneService"/>
+    	
+    	<!-- Setup Literal Value Injection -->
+    	<property name="emailAddress" value="${foo.email}"/>
+    	<property name="team" value="${foo.team}"/>
     </bean>
     
 </beans>
