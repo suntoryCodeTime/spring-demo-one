@@ -10,7 +10,7 @@
     <!-- Define your beans here -->
     
     <!-- Define the dependency -->
-    <bean id="myFortune"
+    <bean id="myFortuneService"
     	class="com.suntorycodetime.springdemo.HappyFortuneService">
     </bean>
     
@@ -18,7 +18,14 @@
     	class="com.suntorycodetime.springdemo.TrackCoach">
     	
     	<!-- Setup constructor injection -->
-    	<constructor-arg ref="myFortune"/>
+    	<constructor-arg ref="myFortuneService"/>
+    </bean>
+    
+    <bean id="myCricketCoach"
+    	class="com.suntorycodetime.springdemo.CricketCoach">
+    	
+    	<!-- Setup setter injection -->
+    	<property name="fortuneService" ref="myFortuneService"/>
     </bean>
     
 </beans>
