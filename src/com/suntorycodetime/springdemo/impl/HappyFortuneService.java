@@ -1,6 +1,8 @@
-package com.suntorycodetime.springdemo;
+package com.suntorycodetime.springdemo.impl;
 
 import java.util.Random;
+
+import com.suntorycodetime.springdemo.FortuneService;
 
 public class HappyFortuneService implements FortuneService {
 	private String[] fortunes = new String[3];
