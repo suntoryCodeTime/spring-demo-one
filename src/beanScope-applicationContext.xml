@@ -11,11 +11,11 @@
     
     <!-- Define the dependency -->
     <bean id="myFortuneService"
-    	class="com.suntorycodetime.springdemo.HappyFortuneService">
+    	class="com.suntorycodetime.springdemo.impl.HappyFortuneService">
     </bean>
     
     <bean id="myCoach"
-    	class="com.suntorycodetime.springdemo.TrackCoach"
+    	class="com.suntorycodetime.springdemo.impl.TrackCoach"
     	scope="prototype">
     	
     	<!-- Setup constructor injection -->
