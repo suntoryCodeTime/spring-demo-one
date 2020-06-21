@@ -2,6 +2,8 @@ package com.suntorycodetime.springdemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.suntorycodetime.springdemo.impl.CricketCoach;
+
 /*
  * Utilizes Setter Dependency Injection
  * */

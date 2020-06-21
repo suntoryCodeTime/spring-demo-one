@@ -1,5 +1,7 @@
 package com.suntorycodetime.springdemo;
 
+import com.suntorycodetime.springdemo.impl.TrackCoach;
+
 public class MyApp {
 
 	public static void main(String[] args) {
